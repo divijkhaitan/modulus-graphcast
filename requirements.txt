@@ -9,7 +9,6 @@ annotated-types==0.7.0
 antlr4-python3-runtime==4.9.3
 anyio==4.8.0
 anykeystore==0.2
-apex @ file:///home/saptarishi.dhanuka_asp25/modulus-graphcast/apex
 argon2-cffi==23.1.0
 argon2-cffi-bindings==21.2.0
 arrow==1.3.0
