@@ -1,3 +1,5 @@
+--find-links https://download.pytorch.org/whl/cu121.html
+--find-links https://data.dgl.ai/wheels/cu121.html
 absl-py==2.1.0
 aiobotocore==2.20.0
 aiohappyeyeballs==2.4.6
