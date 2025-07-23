@@ -22,5 +22,5 @@ conda activate modulus
 
 cd /home/divij.khaitan_asp25/modulus-graphcast/modulus/examples/weather/unified_recipe/
 
-python3 -u download_era5.py
+# python3 -u download_era5.py
 python3 -u curate_graphcast.py

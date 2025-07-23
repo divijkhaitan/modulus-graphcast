@@ -22,8 +22,8 @@ export LD_PRELOAD=/home/divij.khaitan_asp25/.conda/envs/modulus/lib/libstdc++.so
 # cat urls.txt | xargs -n 1 -P 2 -I {} curl -k -u divij.khaitan_asp25@ashoka.edu.in:9383e1155ce2971fac9442ad522c583e -O "{}"
 # curl -k https://object-store.os-api.cci2.ecmwf.int/cci2-prod-cache-1/2025-06-11/5b2b8f4a25da12d7add418cac54eb788.grib -o cds_july_gfs.grib
 
-cd modulus-graphcast
-python3 -u download_forecasts.py
+# cd modulus-graphcast
+# python3 -u download_forecasts.py
 
 cd modulus-graphcast/modulus/examples/weather/unified_recipe
 python3 -u hres_process.py

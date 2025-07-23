@@ -26,5 +26,5 @@ cd /home/divij.khaitan_asp25/modulus-graphcast/modulus/examples/weather/unified_
 
 # python -c "import pandas"
 # python3 eval_graphcast.py
-python3 -u visualise_spatial_errors.py
-python3 -u time_series_errors.py
+python3 -u spatial_errors.py
+# python3 -u time_series_errors.py

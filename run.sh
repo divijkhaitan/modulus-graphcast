@@ -6,7 +6,7 @@
 #PBS -q workq
 #PBS -l host=gpu-h100
 #PBS -k oe
-#PBS -W depend=afterok:611.gpu-h100
+#PBS -W depend=afterany:880.gpu-h100,afterok:867.gpu-h100
 
 export LD_PRELOAD=/home/divij.khaitan_asp25/.conda/envs/modulus/lib/libstdc++.so.6
 export PYTORCH_CUDA_ALLOC_CONF=expandable_segments:True
@@ -23,5 +23,7 @@ conda activate modulus
 
 cd /home/divij.khaitan_asp25/modulus-graphcast/modulus/examples/weather/unified_recipe/
 
-# python3 -u train_graphcast.py
-torchrun  --standalone --nnodes=1 --nproc_per_node=2 train_graphcast.py
+python3 -u train_graphcast.py
+# torchrun  --standalone --nnodes=1 --nproc_per_node=2 train_graphcast.py
+
+mv /home/divij.khaitan_asp25/graphcast_train* /home/divij.khaitan_asp25/logs

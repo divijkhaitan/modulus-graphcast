@@ -25,5 +25,5 @@ cd /home/divij.khaitan_asp25/modulus-graphcast/modulus/examples/weather/unified_
 # python3 -u train_graphcast.py
 # python3 -u download_era5.py
 python3 -u curate_graphcast.py
-python3 -u eval_graphcast.py
+# python3 -u eval_graphcast.py
 # torchrun  --standalone --nnodes=1 --nproc_per_node=2 train_graphcast.py
